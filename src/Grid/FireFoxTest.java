@@ -29,6 +29,7 @@ public class FireFoxTest
 		WebDriver driver=new RemoteWebDriver(new URL("http://192.168.43.144:4444"), caps);
 		driver.get("https://www.google.com/");
 		System.out.println(driver.getTitle());
+		driver.close();
 	}
 
 }
